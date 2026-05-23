@@ -1,0 +1,112 @@
+[gd_scene format=3 uid="uid://cye10d1b14q8x"]
+
+[ext_resource type="Script" uid="uid://tb43c1ix8lq4" path="res://ui/main_menu/menu_principal.gd" id="1_luowc"]
+[ext_resource type="Texture2D" uid="uid://esn387e2bif1" path="res://assets/sprites/backgrounds/BackgroundMainMenu.png" id="2_ngrfs"]
+[ext_resource type="Shader" uid="uid://ke1kggvkqk08" path="res://assets/shaders/logo_remove_black.gdshader" id="3_3vyha"]
+[ext_resource type="Texture2D" uid="uid://ni1o63gkws3" path="res://assets/sprites/logoHackTrail.png" id="4_e5alq"]
+[ext_resource type="Script" uid="uid://cjtt38s3tox0y" path="res://assets/shaders/gamelogo.gd" id="5_m7ih0"]
+[ext_resource type="FontFile" uid="uid://cns11rs0mnxvp" path="res://assets/fonts/Press_Start_2P/PressStart2P-Regular.ttf" id="6_isjn2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_05l2w"]
+shader = ExtResource("3_3vyha")
+shader_parameter/cutoff = 0.18
+
+[sub_resource type="Theme" id="Theme_ig5kc"]
+
+[node name="MenuPrincipal" type="Control" unique_id=837194949]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_luowc")
+
+[node name="Background" type="TextureRect" parent="." unique_id=589392221]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_ngrfs")
+expand_mode = 2
+
+[node name="Logo" type="TextureRect" parent="." unique_id=453827058]
+z_index = 1
+material = SubResource("ShaderMaterial_05l2w")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 10.0
+anchor_bottom = 1.0
+offset_left = -1142.0
+offset_top = -576.0
+offset_right = -12104.756
+offset_bottom = -456.00006
+grow_vertical = 2
+pivot_offset = Vector2(44.64, 70)
+pivot_offset_ratio = Vector2(0.7, 0)
+mouse_filter = 2
+texture = ExtResource("4_e5alq")
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("5_m7ih0")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2063126880]
+z_index = 10
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -327.0
+offset_top = -64.0
+offset_right = -175.0
+offset_bottom = 25.345825
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+pivot_offset_ratio = Vector2(0.3, 0)
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="BotaoStart" type="Button" parent="VBoxContainer" unique_id=1773189764]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = SubResource("Theme_ig5kc")
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0.78431374, 1)
+theme_override_colors/icon_pressed_color = Color(1, 0.9019608, 0, 1)
+theme_override_fonts/font = ExtResource("6_isjn2")
+theme_override_font_sizes/font_size = 16
+text = "Start"
+flat = true
+
+[node name="BotaoSettings" type="Button" parent="VBoxContainer" unique_id=898380974]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0.78431374, 1)
+theme_override_colors/icon_pressed_color = Color(1, 0.9019608, 0, 1)
+theme_override_fonts/font = ExtResource("6_isjn2")
+text = "Settings
+"
+flat = true
+
+[node name="BotaoQuit" type="Button" parent="VBoxContainer" unique_id=1493598877]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.8980392, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0.78431374, 1)
+theme_override_colors/icon_pressed_color = Color(1, 0.9019608, 0, 1)
+theme_override_fonts/font = ExtResource("6_isjn2")
+text = "Quit game
+"
+flat = true
+
+[connection signal="pressed" from="VBoxContainer/BotaoStart" to="." method="_on_botao_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/BotaoSettings" to="." method="_on_botao_settings_pressed"]
+[connection signal="pressed" from="VBoxContainer/BotaoQuit" to="." method="_on_botao_quit_pressed"]
