@@ -18,12 +18,20 @@ config/icon="res://icon.svg"
 [autoload]
 
 GameManager="*uid://bl30y0gosienj"
+<<<<<<< HEAD
 FadeScreen="*uid://y6eqwgao01el"
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+=======
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=360
+>>>>>>> origin/parallax
 window/stretch/mode="viewport"
 
 [input]

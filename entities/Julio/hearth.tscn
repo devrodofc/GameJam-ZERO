@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://ceg7hx0e2cx4i"]
+
+[node name="Hearth" type="Control" unique_id=146333767]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 3
+anchors_preset = 0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=675108291]
+layout_mode = 0
+offset_right = 18.0
+offset_bottom = 18.0
+color = Color(0.5760792, 0.1502276, 0.10753978, 1)

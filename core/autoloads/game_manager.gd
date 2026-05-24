@@ -10,8 +10,13 @@ var collected_memories: Dictionary = {}
 
 # ─── Caminhos das cenas ──────────────────────────────────
 # Deixaremos vazios por enquanto, preencheremos na Sprint 3
+<<<<<<< HEAD
 const SCENE_DAY   = "res://day/room.tscn"
 const SCENE_NIGHT = "res://night/dream.tscn"
+=======
+const SCENE_DAY   = ""
+const SCENE_NIGHT = ""
+>>>>>>> origin/parallax
 
 # ─── Sinais ──────────────────────────────────────────────
 signal phase_changed(new_phase: Phase)
