@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://nuid0to473qf"]
+
+[ext_resource type="Script" uid="uid://c8a3r0whcexu8" path="res://day/item.gd" id="1_xukd0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gnrqa"]
+radius = 21.0
+
+[node name="Item" type="Area2D" unique_id=531312036]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_xukd0")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=992305572]
+scale = Vector2(0.234375, 0.234375)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1220121172]
+shape = SubResource("CircleShape2D_gnrqa")
+
+[node name="Label" type="Label" parent="." unique_id=1661916059]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=109028428]
+offset_left = -20.0
+offset_top = -19.0
+offset_right = 20.0
+offset_bottom = 21.0
+color = Color(0.81566334, 0.62509406, 0.21633247, 0.14509805)

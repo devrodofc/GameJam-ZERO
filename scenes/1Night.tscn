@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bnrddy6hixl2n"]
+
+[ext_resource type="PackedScene" path="res://Test/platform.tscn" id="1_dqfp0"]
+
+[node name="1Night" type="Node2D" unique_id=707525104]
+
+[node name="Platform" parent="." unique_id=2145184235 instance=ExtResource("1_dqfp0")]
+position = Vector2(199, 352)
+scale = Vector2(20, 1)

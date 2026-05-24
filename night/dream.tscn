@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://bk8d3cinavvjv"]
+
+[ext_resource type="PackedScene" uid="uid://bn8gtjh2t7yds" path="res://entities/JulioNight/player.tscn" id="1_6gluu"]
+[ext_resource type="PackedScene" path="res://Test/platform.tscn" id="2_qvdhk"]
+[ext_resource type="PackedScene" uid="uid://7rejwhupagct" path="res://night/Collectable.tscn" id="3_5rf3c"]
+[ext_resource type="Texture2D" uid="uid://d34v0jixype7n" path="res://icon.svg" id="4_5rf3c"]
+[ext_resource type="PackedScene" uid="uid://nuid0to473qf" path="res://day/item.tscn" id="5_ucojy"]
+
+[node name="Dream" type="Node2D" unique_id=626537385]
+
+[node name="Background" type="TextureRect" parent="." unique_id=962365773]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TileMap" type="TileMapLayer" parent="." unique_id=1987500882]
+
+[node name="Player" parent="." unique_id=1153585672 instance=ExtResource("1_6gluu")]
+
+[node name="DreamHUD" type="CanvasLayer" parent="." unique_id=2118196208]
+
+[node name="FadeScreen" type="CanvasLayer" parent="." unique_id=556406980]
+
+[node name="Platform" parent="." unique_id=2145184235 instance=ExtResource("2_qvdhk")]
+position = Vector2(0, 616)
+scale = Vector2(50, 1)
+
+[node name="Collectable" parent="." unique_id=2102626345 instance=ExtResource("3_5rf3c")]
+position = Vector2(429, 567)
+scale = Vector2(0.4, 0.4)
+memory_id = "Carrinho"
+description = "Ele quebrou meu carrinho de brinquedo..."
+memory_icon = ExtResource("4_5rf3c")
+
+[node name="Collectable2" parent="." unique_id=1850493585 instance=ExtResource("3_5rf3c")]
+position = Vector2(-452, 558)
+scale = Vector2(0.4, 0.4)
+memory_id = "Carta de Amor"
+description = "Ela rasgou minha carta de amor..."
+memory_icon = ExtResource("4_5rf3c")
+
+[node name="Collectable3" parent="." unique_id=1784349753 instance=ExtResource("3_5rf3c")]
+position = Vector2(-219, 542)
+memory_id = "Livro de Figurinhas"
+description = "Eles rasgaram minhas figurinhas"
+
+[node name="Item" parent="." unique_id=531312036 instance=ExtResource("5_ucojy")]
+position = Vector2(222, 571)

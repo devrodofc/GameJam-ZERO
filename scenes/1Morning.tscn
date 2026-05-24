@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://we1lue2ru1cy"]
+
+[ext_resource type="PackedScene" path="res://Test/platform.tscn" id="1_1lowl"]
+[ext_resource type="PackedScene" uid="uid://bxhny66uudb6h" path="res://entities/JulioDay/PlayerDay.tscn" id="2_ra5av"]
+[ext_resource type="PackedScene" uid="uid://nuid0to473qf" path="res://day/item.tscn" id="3_ra5av"]
+
+[node name="1Morning" type="Node2D" unique_id=707525104]
+
+[node name="Platform" parent="." unique_id=2145184235 instance=ExtResource("1_1lowl")]
+position = Vector2(482, 318)
+scale = Vector2(50, 1)
+
+[node name="PlayerDay" parent="." unique_id=64091671 instance=ExtResource("2_ra5av")]
+position = Vector2(75, 240)
+
+[node name="Item" parent="." unique_id=531312036 instance=ExtResource("3_ra5av")]
+position = Vector2(281, 269)
+interaction_message = "Mais um dia..."

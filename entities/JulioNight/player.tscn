@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://bn8gtjh2t7yds"]
+
+[ext_resource type="Texture2D" uid="uid://d34v0jixype7n" path="res://icon.svg" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://cobb3iyupj0d7" path="res://entities/JulioNight/player.gd" id="1_onrkg"]
+[ext_resource type="Script" uid="uid://ddd28rf71icub" path="res://entities/JulioNight/camera_2d.gd" id="3_i3pqv"]
+[ext_resource type="PackedScene" uid="uid://ceg7hx0e2cx4i" path="res://entities/JulioNight/hearth.tscn" id="4_hqtel"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_onrkg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4flbx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i3pqv"]
+size = Vector2(126, 64)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hqtel"]
+radius = 80.00625
+
+[node name="Player" type="CharacterBody2D" unique_id=1153585672 groups=["player"]]
+collision_layer = 2
+collision_mask = 9
+script = ExtResource("1_onrkg")
+hearth_scene = ExtResource("4_hqtel")
+jump_force = -500.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1507554230]
+sprite_frames = SubResource("SpriteFrames_onrkg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1573281080]
+position = Vector2(0, 31)
+shape = SubResource("RectangleShape2D_i3pqv")
+
+[node name="HurtBox" type="Area2D" parent="." unique_id=1874734384]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox" unique_id=355255344]
+shape = SubResource("CircleShape2D_hqtel")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=313750160]
+zoom = Vector2(0.5, 0.5)
+process_callback = 0
+script = ExtResource("3_i3pqv")
+
+[node name="Heaths" type="HBoxContainer" parent="." unique_id=531809355]
+offset_left = -32.0
+offset_top = 71.0
+offset_right = 8.0
+offset_bottom = 111.0
