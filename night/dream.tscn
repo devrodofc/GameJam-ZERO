@@ -1,22 +1,33 @@
 [gd_scene format=3 uid="uid://bk8d3cinavvjv"]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://bn8gtjh2t7yds" path="res://entities/julio/player.tscn" id="1_6gluu"]
 =======
 [ext_resource type="PackedScene" uid="uid://c0iyrirvnd57t" path="res://night/Fundo_feliz.tscn" id="1_5rf3c"]
 [ext_resource type="PackedScene" uid="uid://bn8gtjh2t7yds" path="res://entities/Julio/player.tscn" id="1_6gluu"]
 >>>>>>> origin/parallax
+=======
+[ext_resource type="PackedScene" uid="uid://c0iyrirvnd57t" path="res://night/Fundo_feliz.tscn" id="1_5rf3c"]
+[ext_resource type="PackedScene" uid="uid://bn8gtjh2t7yds" path="res://entities/Julio/player.tscn" id="1_6gluu"]
+>>>>>>> 926c3cbac342e69c1e180fd17743fc8df947e556
 [ext_resource type="PackedScene" uid="uid://6im87pmfwtm6" path="res://Test/platform.tscn" id="2_qvdhk"]
 [ext_resource type="PackedScene" uid="uid://7rejwhupagct" path="res://night/Collectable.tscn" id="3_5rf3c"]
 
 [node name="Dream" type="Node2D" unique_id=626537385]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 [node name="BackGround" parent="." unique_id=39909459 instance=ExtResource("1_5rf3c")]
 position = Vector2(445, 607)
 
 >>>>>>> origin/parallax
+=======
+[node name="BackGround" parent="." unique_id=39909459 instance=ExtResource("1_5rf3c")]
+position = Vector2(445, 607)
+
+>>>>>>> 926c3cbac342e69c1e180fd17743fc8df947e556
 [node name="Background" type="TextureRect" parent="." unique_id=962365773]
 offset_right = 40.0
 offset_bottom = 40.0
@@ -31,18 +42,28 @@ offset_bottom = 40.0
 
 [node name="Platform" parent="." unique_id=2145184235 instance=ExtResource("2_qvdhk")]
 <<<<<<< HEAD
+<<<<<<< HEAD
 position = Vector2(0, 616)
 =======
 position = Vector2(4, 722)
 >>>>>>> origin/parallax
+=======
+position = Vector2(4, 722)
+>>>>>>> 926c3cbac342e69c1e180fd17743fc8df947e556
 scale = Vector2(50, 1)
 
 [node name="Collectable" parent="." unique_id=2102626345 instance=ExtResource("3_5rf3c")]
 position = Vector2(276, 477)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 926c3cbac342e69c1e180fd17743fc8df947e556
 
 [node name="Platform2" parent="." unique_id=569680397 instance=ExtResource("2_qvdhk")]
 position = Vector2(1003.99994, 711)
 scale = Vector2(50, 1)
+<<<<<<< HEAD
 >>>>>>> origin/parallax
+=======
+>>>>>>> 926c3cbac342e69c1e180fd17743fc8df947e556

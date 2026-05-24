@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 GameManager="*uid://bl30y0gosienj"
 <<<<<<< HEAD
+<<<<<<< HEAD
 FadeScreen="*uid://y6eqwgao01el"
 
 [display]
@@ -26,12 +27,17 @@ FadeScreen="*uid://y6eqwgao01el"
 window/size/viewport_width=1280
 window/size/viewport_height=720
 =======
+=======
+>>>>>>> 926c3cbac342e69c1e180fd17743fc8df947e556
 
 [display]
 
 window/size/viewport_width=640
 window/size/viewport_height=360
+<<<<<<< HEAD
 >>>>>>> origin/parallax
+=======
+>>>>>>> 926c3cbac342e69c1e180fd17743fc8df947e556
 window/stretch/mode="viewport"
 
 [input]

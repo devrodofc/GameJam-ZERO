@@ -8,6 +8,7 @@ script = ExtResource("1_c5u3y")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=830505264]
 <<<<<<< HEAD
+<<<<<<< HEAD
 visible = false
 anchors_preset = 15
 anchor_right = 1.0
@@ -18,3 +19,6 @@ color = Color(0, 0, 0, 1)
 =======
 metadata/_edit_use_anchors_ = true
 >>>>>>> origin/parallax
+=======
+metadata/_edit_use_anchors_ = true
+>>>>>>> 926c3cbac342e69c1e180fd17743fc8df947e556

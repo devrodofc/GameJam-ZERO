@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dm2nc8cvbwl04"]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://6im87pmfwtm6" path="res://Test/platform.tscn" id="1_hw67x"]
 [ext_resource type="PackedScene" uid="uid://dw3sln8aa6uj2" path="res://entities/enemies/Monster3/phantom.tscn" id="2_i551t"]
 [ext_resource type="PackedScene" uid="uid://bn8gtjh2t7yds" path="res://entities/julio/player.tscn" id="3_p8gai"]
@@ -9,6 +10,11 @@
 [ext_resource type="PackedScene" uid="uid://dw3sln8aa6uj2" path="res://Enemies/Enemies/phantom.tscn" id="2_i551t"]
 [ext_resource type="PackedScene" uid="uid://bn8gtjh2t7yds" path="res://Player/player.tscn" id="3_p8gai"]
 >>>>>>> origin/parallax
+=======
+[ext_resource type="PackedScene" uid="uid://6im87pmfwtm6" path="res://Teste/platform.tscn" id="1_hw67x"]
+[ext_resource type="PackedScene" uid="uid://dw3sln8aa6uj2" path="res://Enemies/Enemies/phantom.tscn" id="2_i551t"]
+[ext_resource type="PackedScene" uid="uid://bn8gtjh2t7yds" path="res://Player/player.tscn" id="3_p8gai"]
+>>>>>>> 926c3cbac342e69c1e180fd17743fc8df947e556
 
 [node name="Main" type="Node2D" unique_id=1445903100]
 
