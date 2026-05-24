@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dwi65wnx75rcj"]
+
+[ext_resource type="Script" uid="uid://cg3q54ua168h6" path="res://ui/dialogue/dialogue.gd" id="1_nnq6v"]
+
+[node name="DialogBox" type="Node2D" unique_id=392504978]
+script = ExtResource("1_nnq6v")
+
+[node name="Panel" type="Panel" parent="." unique_id=1213900273]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Panel" unique_id=1711360392]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Label2" type="Label" parent="Panel" unique_id=1432979350]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://ktv6yt5eagcp"]
+
+[ext_resource type="Script" uid="uid://ddl5p56j2t5s5" path="res://entities/enemies/MonsterAbstract/enemy_base.gd" id="1_7p7yq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yl7ld"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jgrh8"]
+radius = 8.0
+
+[node name="EnemyDefault" type="CharacterBody2D" unique_id=300325181]
+collision_layer = 4
+script = ExtResource("1_7p7yq")
+color = Color(0.7922119, 0.15394786, 0.41802123, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=170974071]
+shape = SubResource("CircleShape2D_yl7ld")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=33135706]
+offset_left = -7.0
+offset_top = -7.0
+offset_right = 7.0
+offset_bottom = 7.0
+color = Color(0.522859, 0.03945296, 0.16005018, 1)
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=772206435]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=387406417]
+shape = SubResource("CircleShape2D_jgrh8")

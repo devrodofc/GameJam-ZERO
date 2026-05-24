@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dw3sln8aa6uj2"]
+
+[ext_resource type="PackedScene" uid="uid://ktv6yt5eagcp" path="res://entities/enemies/MonsterAbstract/enemyDefault.tscn" id="1_otkyv"]
+[ext_resource type="Script" uid="uid://cr5v3g0j8sfcw" path="res://entities/enemies/Monster3/phantom.gd" id="2_et0vf"]
+
+[node name="Phantom" unique_id=300325181 instance=ExtResource("1_otkyv")]
+collision_mask = 0
+script = ExtResource("2_et0vf")
+orbit_radius = 300.0
+orbit_speed = 2.0
+orbit_time = 3.0
+charge_speed = 1000.0
+charge_overshoot = 1000.0
+prepare_time = 0.6
+cooldown_time = 0.8
+color = Color(1, 1, 1, 1)

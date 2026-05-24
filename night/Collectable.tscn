@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://7rejwhupagct"]
+
+[ext_resource type="Script" uid="uid://c21yncahwb33g" path="res://night/collectable.gd" id="1_a2why"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iwwuy"]
+
+[node name="Collectable" type="Area2D" unique_id=2102626345]
+collision_layer = 8
+collision_mask = 0
+script = ExtResource("1_a2why")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=204612106]
+shape = SubResource("RectangleShape2D_iwwuy")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1101020352]
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+color = Color(0, 0, 0, 0.25882354)

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cdlkna730ogxl"]
+
+[node name="Room" type="Node2D" unique_id=1541954128]
+
+[node name="Background" type="TextureRect" parent="." unique_id=210541054]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=462626259]
+
+[node name="Items" type="Node2D" parent="." unique_id=800852462]
+
+[node name="Area2D" type="Area2D" parent="Items" unique_id=521143717]
+
+[node name="Area2D2" type="Area2D" parent="Items" unique_id=1477478618]
+
+[node name="Area2D3" type="Area2D" parent="Items" unique_id=715696093]
+
+[node name="DialogueBox" type="CanvasLayer" parent="." unique_id=62904984]
+
+[node name="BedTrigger" type="Node2D" parent="." unique_id=1366546699]
+
+[node name="FadeScreen" type="CanvasLayer" parent="." unique_id=1068751288]

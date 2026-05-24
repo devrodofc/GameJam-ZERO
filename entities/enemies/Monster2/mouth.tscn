@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c8ifa2tx1h53"]
+
+[ext_resource type="PackedScene" uid="uid://ktv6yt5eagcp" path="res://entities/enemies/MonsterAbstract/enemyDefault.tscn" id="1_1jnwq"]
+[ext_resource type="Script" uid="uid://b6hcj6mbcmsv1" path="res://entities/enemies/Monster2/mouth.gd" id="2_ostq6"]
+[ext_resource type="PackedScene" uid="uid://cpy2uqnmfi8ix" path="res://entities/enemies/Projectile/Projectile_Enemy.tscn" id="3_e8gau"]
+
+[node name="Mouth" unique_id=300325181 instance=ExtResource("1_1jnwq")]
+script = ExtResource("2_ostq6")
+move_speed = 160.0
+gravity = 980.0
+jump_force = -450.0
+jump_threshold = 40.0
+min_distance = 150.0
+max_distance = 250.0
+time_to_shoot = 2.0
+prepare_time = 0.4
+cooldown_time = 0.8
+projectile_scene = ExtResource("3_e8gau")
+projectile_speed = 400.0
+color = Color(0.6447549, 0.45183104, 0.49499273, 1)

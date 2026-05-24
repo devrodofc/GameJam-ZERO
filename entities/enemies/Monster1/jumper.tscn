@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://7dpsd6xffu7f"]
+
+[ext_resource type="PackedScene" uid="uid://ktv6yt5eagcp" path="res://entities/enemies/MonsterAbstract/enemyDefault.tscn" id="1_fkl42"]
+[ext_resource type="Script" uid="uid://bnbf2k67imoev" path="res://entities/enemies/Monster1/jumper.gd" id="2_yu73a"]
+
+[node name="Jumper" unique_id=300325181 instance=ExtResource("1_fkl42")]
+script = ExtResource("2_yu73a")
+jump_force = -450.0
+chase_speed = 200.0
+gravity = 980.0
+ground_friction = 1500.0
+jump_cooldown = 0.8
+color = Color(0, 0.4842245, 0.53638095, 1)
