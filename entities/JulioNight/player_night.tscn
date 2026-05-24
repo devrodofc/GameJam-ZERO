@@ -1,0 +1,145 @@
+[gd_scene format=3 uid="uid://bn8gtjh2t7yds"]
+
+[ext_resource type="Script" uid="uid://cobb3iyupj0d7" path="res://entities/JulioNight/player_night.gd" id="1_onrkg"]
+[ext_resource type="Script" uid="uid://ddd28rf71icub" path="res://entities/JulioNight/camera_2d.gd" id="3_i3pqv"]
+[ext_resource type="Texture2D" uid="uid://b6qm0y6sdwlue" path="res://assets/sprites/entities/julio/JulioSalve2.png" id="4_2jj0q"]
+[ext_resource type="PackedScene" uid="uid://ceg7hx0e2cx4i" path="res://entities/JulioNight/hearth.tscn" id="4_hqtel"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8khiq"]
+atlas = ExtResource("4_2jj0q")
+region = Rect2(46, 13, 31, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0rteh"]
+atlas = ExtResource("4_2jj0q")
+region = Rect2(13, 13, 33, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dfe1j"]
+atlas = ExtResource("4_2jj0q")
+region = Rect2(75, 13, 37, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hmxef"]
+atlas = ExtResource("4_2jj0q")
+region = Rect2(15, 79, 31, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_63xun"]
+atlas = ExtResource("4_2jj0q")
+region = Rect2(46, 79, 31, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ks0m2"]
+atlas = ExtResource("4_2jj0q")
+region = Rect2(77, 79, 31, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vufdf"]
+atlas = ExtResource("4_2jj0q")
+region = Rect2(13, 48, 31, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1jpmg"]
+atlas = ExtResource("4_2jj0q")
+region = Rect2(46, 48, 31, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vcuiu"]
+atlas = ExtResource("4_2jj0q")
+region = Rect2(77, 48, 31, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b8wl2"]
+atlas = ExtResource("4_2jj0q")
+region = Rect2(46, 48, 31, 31)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ap4ig"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8khiq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0rteh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dfe1j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0rteh")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hmxef")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_63xun")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ks0m2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_63xun")
+}],
+"loop": true,
+"name": &"walk_left",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vufdf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1jpmg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vcuiu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b8wl2")
+}],
+"loop": true,
+"name": &"walk_right",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i3pqv"]
+size = Vector2(39, 15)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2jj0q"]
+radius = 26.0
+height = 98.0
+
+[node name="Player" type="CharacterBody2D" unique_id=1153585672 groups=["player"]]
+collision_layer = 2
+collision_mask = 9
+script = ExtResource("1_onrkg")
+hearth_scene = ExtResource("4_hqtel")
+jump_force = -500.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=110704941]
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_ap4ig")
+animation = &"idle"
+autoplay = "idle"
+metadata/_edit_lock_ = true
+
+[node name="Gravity" type="CollisionShape2D" parent="." unique_id=1573281080]
+position = Vector2(1.5, 55.5)
+shape = SubResource("RectangleShape2D_i3pqv")
+
+[node name="HurtBox" type="Area2D" parent="." unique_id=1874734384]
+collision_layer = 2
+collision_mask = 0
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox" unique_id=355255344]
+position = Vector2(2, 9)
+shape = SubResource("CapsuleShape2D_2jj0q")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=313750160]
+zoom = Vector2(0.5, 0.5)
+process_callback = 0
+script = ExtResource("3_i3pqv")
+
+[node name="Heaths" type="HBoxContainer" parent="." unique_id=531809355]
+offset_left = -32.0
+offset_top = 71.0
+offset_right = 8.0
+offset_bottom = 111.0

@@ -1,0 +1,121 @@
+[gd_scene format=3 uid="uid://bxhny66uudb6h"]
+
+[ext_resource type="Script" uid="uid://ccirfc6l853tt" path="res://entities/JulioDay/player_day.gd" id="1_rudke"]
+[ext_resource type="Texture2D" uid="uid://b6qm0y6sdwlue" path="res://assets/sprites/entities/julio/JulioSalve2.png" id="2_06r1i"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rudke"]
+radius = 30.0
+height = 105.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8khiq"]
+atlas = ExtResource("2_06r1i")
+region = Rect2(46, 13, 31, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0rteh"]
+atlas = ExtResource("2_06r1i")
+region = Rect2(13, 13, 33, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dfe1j"]
+atlas = ExtResource("2_06r1i")
+region = Rect2(75, 13, 37, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hmxef"]
+atlas = ExtResource("2_06r1i")
+region = Rect2(15, 79, 31, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_63xun"]
+atlas = ExtResource("2_06r1i")
+region = Rect2(46, 79, 31, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ks0m2"]
+atlas = ExtResource("2_06r1i")
+region = Rect2(77, 79, 31, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vufdf"]
+atlas = ExtResource("2_06r1i")
+region = Rect2(13, 48, 31, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1jpmg"]
+atlas = ExtResource("2_06r1i")
+region = Rect2(46, 48, 31, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vcuiu"]
+atlas = ExtResource("2_06r1i")
+region = Rect2(77, 48, 31, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b8wl2"]
+atlas = ExtResource("2_06r1i")
+region = Rect2(46, 48, 31, 31)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m6cpk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8khiq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0rteh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dfe1j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0rteh")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hmxef")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_63xun")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ks0m2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_63xun")
+}],
+"loop": true,
+"name": &"walk_left",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vufdf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1jpmg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vcuiu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b8wl2")
+}],
+"loop": true,
+"name": &"walk_right",
+"speed": 3.0
+}]
+
+[node name="PlayerDay" type="CharacterBody2D" unique_id=64091671 groups=["player"]]
+collision_layer = 2
+collision_mask = 9
+script = ExtResource("1_rudke")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1584017294]
+position = Vector2(1, 3.5)
+shape = SubResource("CapsuleShape2D_rudke")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1422487217]
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_m6cpk")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.09886683
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=99371270]
+enabled = false

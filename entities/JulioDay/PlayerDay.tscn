@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bxhny66uudb6h"]
+[gd_scene format=3 uid="uid://cejs4c3ds7ca7"]
 
 [ext_resource type="Script" uid="uid://ccirfc6l853tt" path="res://entities/JulioDay/player_day.gd" id="1_srmah"]
 [ext_resource type="Texture2D" uid="uid://d34v0jixype7n" path="res://icon.svg" id="2_qr1i6"]
