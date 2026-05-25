@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://b7l6og5h6qfcb"]
+
+[ext_resource type="Texture2D" uid="uid://4qyqskv4rbla" path="res://assets/parallax/BackGround_Dream_Ajustado/SkyYellow/7a68bc2b-68a3-43ee-b0ff-b97d5586ce25.png" id="1_ji414"]
+[ext_resource type="Texture2D" uid="uid://bbb0l00wi800p" path="res://assets/parallax/BackGround_Dream_Ajustado/SkyYellow/0ddda200-446d-431e-888f-dc510a949d15.png" id="2_k0f50"]
+[ext_resource type="Texture2D" uid="uid://dr8d18vq4xr04" path="res://assets/parallax/BackGround_Dream_Ajustado/SkyYellow/b7ea8358-14a4-41e0-9ed2-a94767631bb8.png" id="3_0vyxx"]
+[ext_resource type="Texture2D" uid="uid://cyqfe0x58xuwp" path="res://assets/parallax/BackGround_Dream_Ajustado/SkyYellow/7d3016bb-c1d2-4d55-a9e9-3d570eff09ca.png" id="4_vnsep"]
+[ext_resource type="Texture2D" uid="uid://dtrdjnt42dxik" path="res://assets/parallax/BackGround_Dream_Ajustado/SkyYellow/66458a64-b8bc-4756-962d-13635a1a396d.png" id="5_ibcq6"]
+[ext_resource type="Texture2D" uid="uid://6xhdeiin0tv5" path="res://assets/parallax/BackGround_Dream_Ajustado/SkyYellow/358e81e7-ef72-4690-bdac-654b1216a211.png" id="6_ehn6u"]
+
+[sub_resource type="GDScript" id="GDScript_jpexx"]
+script/source = "extends Parallax2D
+
+@export var Cloud_Speed: float = -15
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	scroll_offset.x += Cloud_Speed * delta
+"
+
+[node name="BackGround" type="Node2D" unique_id=39909459]
+
+[node name="ParallaxBackground" type="Node2D" parent="." unique_id=1152961940]
+scale = Vector2(3, 3)
+
+[node name="ParallaxLayer6" type="Parallax2D" parent="ParallaxBackground" unique_id=2074997703]
+scroll_scale = Vector2(0.5, 0.5)
+repeat_size = Vector2(960, 0)
+repeat_times = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=190629996]
+position = Vector2(-21.000008, -98)
+scale = Vector2(1.5, 1.562)
+texture = ExtResource("1_ji414")
+
+[node name="ParallaxLayer4" type="Parallax2D" parent="ParallaxBackground" unique_id=1386419230]
+scroll_scale = Vector2(0.5, 0.5)
+repeat_size = Vector2(960, 0)
+repeat_times = 3
+script = SubResource("GDScript_jpexx")
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4" unique_id=128555203]
+position = Vector2(-20, -95)
+scale = Vector2(1.5, 1.562)
+texture = ExtResource("2_k0f50")
+
+[node name="ParallaxLayer2" type="Parallax2D" parent="ParallaxBackground" unique_id=278824218]
+scroll_scale = Vector2(0.8, 0.8)
+repeat_size = Vector2(960, 0)
+repeat_times = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2" unique_id=1279764287]
+position = Vector2(-21.310013, -91.899994)
+scale = Vector2(1.5, 1.562)
+texture = ExtResource("3_0vyxx")
+
+[node name="ParallaxLayer3" type="Parallax2D" parent="ParallaxBackground" unique_id=2132862461]
+scroll_scale = Vector2(0.8, 0.8)
+repeat_size = Vector2(960, 0)
+repeat_times = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3" unique_id=1008072832]
+position = Vector2(-18, -99)
+scale = Vector2(1.5, 1.562)
+texture = ExtResource("4_vnsep")
+
+[node name="ParallaxLayer5" type="Parallax2D" parent="ParallaxBackground" unique_id=1968011323]
+scroll_scale = Vector2(0.9, 0.9)
+repeat_size = Vector2(960, 0)
+repeat_times = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5" unique_id=841606920]
+position = Vector2(-22, -55.999996)
+scale = Vector2(1.5, 1.562)
+texture = ExtResource("5_ibcq6")
+
+[node name="ParallaxLayer" type="Parallax2D" parent="ParallaxBackground" unique_id=1269847061]
+scroll_scale = Vector2(0.9, 0.9)
+repeat_size = Vector2(960, 0)
+repeat_times = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=272106252]
+position = Vector2(-18, -93)
+scale = Vector2(1.5, 1.562)
+texture = ExtResource("6_ehn6u")

@@ -3,6 +3,51 @@
 [ext_resource type="PackedScene" uid="uid://ktv6yt5eagcp" path="res://entities/enemies/MonsterAbstract/enemyDefault.tscn" id="1_1jnwq"]
 [ext_resource type="Script" uid="uid://b6hcj6mbcmsv1" path="res://entities/enemies/Monster2/mouth.gd" id="2_ostq6"]
 [ext_resource type="PackedScene" uid="uid://cpy2uqnmfi8ix" path="res://entities/enemies/Projectile/Projectile_Enemy.tscn" id="3_e8gau"]
+[ext_resource type="Texture2D" uid="uid://d1pavi0ackgil" path="res://assets/sprites/entities/monster2/Boca - Vilao - GameJam (1).png" id="4_y8xjc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y8xjc"]
+size = Vector2(37, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q1nlc"]
+atlas = ExtResource("4_y8xjc")
+region = Rect2(286, 133, 143, 133)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a05e0"]
+atlas = ExtResource("4_y8xjc")
+region = Rect2(286, 0, 143, 133)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yu5kd"]
+atlas = ExtResource("4_y8xjc")
+region = Rect2(143, 0, 143, 133)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bg43b"]
+atlas = ExtResource("4_y8xjc")
+region = Rect2(143, 133, 143, 133)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7vjb4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q1nlc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a05e0")
+}],
+"loop": false,
+"name": &"kiss",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yu5kd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bg43b")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
 
 [node name="Mouth" unique_id=300325181 instance=ExtResource("1_1jnwq")]
 script = ExtResource("2_ostq6")
@@ -18,3 +63,12 @@ cooldown_time = 0.8
 projectile_scene = ExtResource("3_e8gau")
 projectile_speed = 400.0
 color = Color(0.6447549, 0.45183104, 0.49499273, 1)
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=170974071]
+position = Vector2(2.5, 21)
+shape = SubResource("RectangleShape2D_y8xjc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="3" unique_id=1032014314]
+sprite_frames = SubResource("SpriteFrames_7vjb4")
+animation = &"walk"
+autoplay = "walk"

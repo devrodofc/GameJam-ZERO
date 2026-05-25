@@ -100,7 +100,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i3pqv"]
-size = Vector2(39, 15)
+size = Vector2(39, 70)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2jj0q"]
 radius = 26.0
@@ -121,7 +121,7 @@ autoplay = "idle"
 metadata/_edit_lock_ = true
 
 [node name="Gravity" type="CollisionShape2D" parent="." unique_id=1573281080]
-position = Vector2(1.5, 55.5)
+position = Vector2(1.5, 28)
 shape = SubResource("RectangleShape2D_i3pqv")
 
 [node name="HurtBox" type="Area2D" parent="." unique_id=1874734384]
@@ -139,7 +139,14 @@ process_callback = 0
 script = ExtResource("3_i3pqv")
 
 [node name="Heaths" type="HBoxContainer" parent="." unique_id=531809355]
-offset_left = -32.0
-offset_top = 71.0
-offset_right = 8.0
-offset_bottom = 111.0
+offset_left = -54.0
+offset_top = -88.0
+offset_right = -14.0
+offset_bottom = -48.0
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=2111608422]
+offset_left = -68.0
+offset_top = -81.0
+offset_right = 67.0
+offset_bottom = -65.0
+show_percentage = false

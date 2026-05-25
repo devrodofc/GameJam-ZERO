@@ -5,7 +5,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_yl7ld"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jgrh8"]
-radius = 8.0
+radius = 33.24154
 
 [node name="EnemyDefault" type="CharacterBody2D" unique_id=300325181]
 collision_layer = 4

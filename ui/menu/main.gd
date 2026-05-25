@@ -4,6 +4,9 @@ extends Control
 @onready var main_buttons: VBoxContainer = $MarginContainer/MainBtns
 @onready var options_buttons: VBoxContainer = $MarginContainer/OptionsBtns
 @onready var back_button: TextureButton = $BtnBack
+@onready var credits_container: VBoxContainer = $CreditsContainer
+@onready var controles_container: VBoxContainer = $ControlesContainer
+@onready var logo: Sprite2D = $Logo
 
 func _ready() -> void:
 	# Garante que o menu comece no estado correto
@@ -12,22 +15,53 @@ func _ready() -> void:
 # --- FUNÇÕES DE TRANSIÇÃO (ESTADOS) ---
 
 func _show_main_menu() -> void:
-	options_buttons.hide() # Esconde as opções
+	main_buttons.show()
+	options_buttons.hide()
 	back_button.hide()
-	main_buttons.show()    # Mostra o menu principal
+	credits_container.hide()
+	controles_container.hide()
+	logo.show()
 
 func _show_options_menu() -> void:
-	main_buttons.hide()    # Esconde o menu principal
+	main_buttons.hide()
+	options_buttons.show()
 	back_button.show()
-	options_buttons.show() # Mostra as opções
+	credits_container.hide()
+	controles_container.hide()
+	logo.show()
+	
+func _show_credits_menu() -> void:
+	main_buttons.hide()
+	options_buttons.hide()
+	back_button.show()
+	credits_container.show()
+	controles_container.hide()
+	logo.hide()
+	
+func _show_controles_menu() -> void:
+	main_buttons.hide()
+	options_buttons.hide()
+	back_button.show()
+	credits_container.hide()
+	controles_container.show()
+	logo.hide()
 
 # --- SINAIS DOS BOTÕES (Ações) ---
 
 func _on_btn_options_pressed() -> void:
 	_show_options_menu()
 
+func _on_btn_credits_pressed() -> void:
+	_show_credits_menu()
+	
+func _on_btn_controles_pressed() -> void:
+	_show_controles_menu()
+	
 func _on_btn_back_pressed() -> void:
-	_show_main_menu()
+	if credits_container.visible or controles_container.visible:
+		_show_options_menu()
+	elif options_buttons.visible:
+		_show_main_menu()
 
 func _on_btn_start_pressed() -> void:
 	main_buttons.mouse_filter = Control.MOUSE_FILTER_IGNORE

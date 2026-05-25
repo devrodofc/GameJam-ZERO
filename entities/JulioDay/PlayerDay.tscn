@@ -13,7 +13,12 @@ animations = [{
 "texture": ExtResource("2_qr1i6")
 }],
 "loop": true,
-"name": &"default",
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"walk",
 "speed": 5.0
 }]
 
@@ -27,5 +32,6 @@ shape = SubResource("RectangleShape2D_tclyk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1422487217]
 sprite_frames = SubResource("SpriteFrames_m6cpk")
+animation = &"idle"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=99371270]

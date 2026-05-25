@@ -1,12 +1,15 @@
 [gd_scene format=3 uid="uid://ceg7hx0e2cx4i"]
 
+[ext_resource type="Texture2D" uid="uid://7hxohmetetv4" path="res://assets/Pixel_Heart_Sprite_Sheet_16x16.png" id="1_t63ay"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_in6wy"]
+atlas = ExtResource("1_t63ay")
+region = Rect2(0, 0, 16, 16)
+
 [node name="Hearth" type="Control" unique_id=146333767]
 custom_minimum_size = Vector2(20, 20)
 layout_mode = 3
 anchors_preset = 0
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=675108291]
-layout_mode = 0
-offset_right = 18.0
-offset_bottom = 18.0
-color = Color(0.5760792, 0.1502276, 0.10753978, 1)
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=152833436]
+texture = SubResource("AtlasTexture_in6wy")

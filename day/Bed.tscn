@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dmjgwmyekqrcx"]
 
 [ext_resource type="Script" uid="uid://dr7438s2ai2rh" path="res://day/bed.gd" id="1_cg6ud"]
+[ext_resource type="Texture2D" uid="uid://28ac2adhfwmv" path="res://assets/sprites/backgrounds/cama-removebg-preview.png" id="2_3uake"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3uake"]
 
@@ -17,3 +18,7 @@ offset_left = -10.0
 offset_top = -10.0
 offset_right = 10.0
 offset_bottom = 10.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1688452118]
+texture = ExtResource("2_3uake")
+region_rect = Rect2(80.000015, 92.79999, 49.600006, 68.8)

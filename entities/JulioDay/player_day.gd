@@ -1,6 +1,12 @@
 extends CharacterBody2D
 
 # ==========================================
+# REFERÊNCIAS VISUAIS
+# ==========================================
+# ATENÇÃO: Troque "AnimationPlayer" pelo nome do seu nó (ex: $AnimatedSprite2D) se necessário.
+@onready var anim = $AnimatedSprite2D
+
+# ==========================================
 # CONFIGURAÇÕES DE MOVIMENTO
 # ==========================================
 @export_group("Física")
@@ -34,12 +40,26 @@ func _physics_process(delta: float) -> void:
 		# Personagem solta o peso do corpo e vai parando aos poucos
 		velocity.x = move_toward(velocity.x, 0, friction * delta)
 		
-	# 4. TENTATIVA DE PULO
+	# 4. CHAMA O CONTROLE DE ANIMAÇÕES
+	_atualizar_animacoes(direction)
+		
+	# 5. TENTATIVA DE PULO
 	if Input.is_action_just_pressed("jump"):
 		_show_tired_message()
 
-	# 5. EXECUTA O MOVIMENTO E COLISÕES
+	# 6. EXECUTA O MOVIMENTO E COLISÕES
 	move_and_slide()
+
+# ==========================================
+# CONTROLE DE ANIMAÇÃO
+# ==========================================
+func _atualizar_animacoes(direction: float) -> void:
+	if direction == 0:
+		anim.play("idle")
+	elif direction > 0:
+		anim.play("walk_right")
+	elif direction < 0:
+		anim.play("walk_left")
 
 # ==========================================
 # MENSAGEM FLUTUANTE

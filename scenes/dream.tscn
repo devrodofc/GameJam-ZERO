@@ -1,7 +1,8 @@
-[gd_scene format=3 uid="uid://bk8d3cinavvjv"]
+[gd_scene format=4 uid="uid://bk8d3cinavvjv"]
 
-[ext_resource type="PackedScene" uid="uid://bn8gtjh2t7yds" path="res://entities/JulioNight/player.tscn" id="1_1rqec"]
-[ext_resource type="PackedScene" uid="uid://yo7ghx1njekx" path="res://Test/platform.tscn" id="2_b68cj"]
+[ext_resource type="PackedScene" uid="uid://bn8gtjh2t7yds" path="res://entities/JulioNight/player_night.tscn" id="1_1rqec"]
+[ext_resource type="Texture2D" uid="uid://gt7hkrtg1gps" path="res://assets/sprites/world_tileset.png" id="1_hd16n"]
+[ext_resource type="PackedScene" uid="uid://b7l6og5h6qfcb" path="res://parallax.tscn" id="1_u3fgl"]
 [ext_resource type="PackedScene" uid="uid://7rejwhupagct" path="res://night/Collectable.tscn" id="3_mt4cf"]
 [ext_resource type="Texture2D" uid="uid://lsik0nhoqdye" path="res://assets/sprites/items/Pony 5.png" id="4_47r3v"]
 [ext_resource type="Texture2D" uid="uid://bt5f280yjc0mk" path="res://assets/sprites/items/carta-removebg-preview.png" id="5_47r3v"]
@@ -16,127 +17,284 @@
 [ext_resource type="Texture2D" uid="uid://j6er0nqj2ls4" path="res://assets/sprites/items/escorregador.png" id="11_hd16n"]
 [ext_resource type="Texture2D" uid="uid://bslae3f4cnlac" path="res://assets/sprites/items/cubo-magico.png" id="12_u3fgl"]
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u3fgl"]
+texture = ExtResource("1_hd16n")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:0/0 = 0
+9:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:0/0 = 0
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:0/0 = 0
+11:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:1/0 = 0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:1/0 = 0
+10:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:1/0 = 0
+11:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+3:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+6:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+0:13/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+3:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+0:15/0 = 0
+1:15/0 = 0
+2:15/0 = 0
+3:15/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_8win1"]
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 0
+sources/1 = SubResource("TileSetAtlasSource_u3fgl")
+
 [node name="Dream" type="Node2D" unique_id=626537385]
+
+[node name="BackGround" parent="." unique_id=39909459 instance=ExtResource("1_u3fgl")]
+position = Vector2(-338, 311)
 
 [node name="Background" type="TextureRect" parent="." unique_id=962365773]
 offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="TileMap" type="TileMapLayer" parent="." unique_id=1987500882]
+scale = Vector2(4, 4)
+tile_map_data = PackedByteArray("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")
+tile_set = SubResource("TileSet_8win1")
 
 [node name="Player" parent="." unique_id=1153585672 instance=ExtResource("1_1rqec")]
 position = Vector2(43, 110)
+max_charge_force = 1500.0
+min_charge_force = 850.0
 
 [node name="DreamHUD" type="CanvasLayer" parent="." unique_id=2118196208]
 
 [node name="FadeScreen" type="CanvasLayer" parent="." unique_id=556406980]
 
-[node name="Platform" parent="." unique_id=2145184235 instance=ExtResource("2_b68cj")]
-position = Vector2(0, 616)
-scale = Vector2(50, 1)
-
-[node name="Collectable" parent="." unique_id=2102626345 instance=ExtResource("3_mt4cf")]
-position = Vector2(434, 533.00006)
+[node name="Collectable_D1A" parent="." unique_id=2102626345 instance=ExtResource("3_mt4cf")]
+position = Vector2(-1351.9999, 305)
 scale = Vector2(5, 5)
 memory_id = "Carrinho"
-description = "Ele quebrou meu cavalo de brinquedo..."
+description = "Meu cavalo de brinquedo... quebrado por ele..."
 memory_icon = ExtResource("4_47r3v")
 
-[node name="Collectable2" parent="." unique_id=1850493585 instance=ExtResource("3_mt4cf")]
-position = Vector2(-386, 566)
+[node name="Collectable_D1B" parent="." unique_id=1784349753 instance=ExtResource("3_mt4cf")]
+position = Vector2(-12, 18)
+memory_id = "Bola"
+description = "Ele furou minha bola..."
+memory_icon = ExtResource("5_j1myf")
+
+[node name="Collectable_D1C" parent="." unique_id=867845032 instance=ExtResource("3_mt4cf")]
+position = Vector2(441, 567)
+memory_id = "Pipa"
+description = "Ele sempre cortou minha pipa..."
+memory_icon = ExtResource("9_sej5t")
+
+[node name="Collectable_D2A" parent="." unique_id=1850493585 instance=ExtResource("3_mt4cf")]
+position = Vector2(-481.00003, 555)
 scale = Vector2(0.4, 0.4)
 memory_id = "Carta de Amor"
 description = "Ela rasgou minha carta de amor..."
+active_night = 2
 memory_icon = ExtResource("5_47r3v")
 
-[node name="Collectable3" parent="." unique_id=1784349753 instance=ExtResource("3_mt4cf")]
-position = Vector2(-217, 549)
-memory_id = "Livro de Figurinhas"
-description = "Eles furaram minhas bola..."
-memory_icon = ExtResource("5_j1myf")
-
-[node name="Collectable4" parent="." unique_id=2084597834 instance=ExtResource("3_mt4cf")]
-position = Vector2(181, 535)
-memory_id = "MemoriaA"
-description = "Ele roubou meu carrinho..."
-active_night = 2
-memory_icon = ExtResource("7_uddy2")
-
-[node name="Collectable5" parent="." unique_id=1500076848 instance=ExtResource("3_mt4cf")]
-position = Vector2(347, 540)
-memory_id = "MemoriaC"
-description = "Ela quebraram meu controle......"
+[node name="Collectable_D2B" parent="." unique_id=1500076848 instance=ExtResource("3_mt4cf")]
+position = Vector2(-1518, 154)
+memory_id = "Videogame"
+description = "Ela riu quando chamei ela pra jogar..."
 active_night = 2
 memory_icon = ExtResource("8_jog6y")
 
-[node name="Collectable7" parent="." unique_id=867845032 instance=ExtResource("3_mt4cf")]
-position = Vector2(30, 529)
-memory_id = "MemoriaC"
-description = "Eles cortaram minhas pipa..."
+[node name="Collectable_D2C" parent="." unique_id=1968682223 instance=ExtResource("3_mt4cf")]
+position = Vector2(-6, -29)
+memory_id = "Ursinho"
+description = "Você jogou fora meu ursinho..."
 active_night = 2
-memory_icon = ExtResource("9_sej5t")
-
-[node name="Collectable8" parent="." unique_id=1968682223 instance=ExtResource("3_mt4cf")]
-position = Vector2(-124, 544)
-memory_id = "MemoriaB"
-description = "Você roubou meu ursinho..."
-active_night = 3
 memory_icon = ExtResource("10_8win1")
 
-[node name="Collectable9" parent="." unique_id=1542452772 instance=ExtResource("3_mt4cf")]
-position = Vector2(-182, 545)
-memory_id = "MemoriaB"
-description = "Eles me empurraram no escurregador no escurregador......"
+[node name="Collectable_D3A" parent="." unique_id=2084597834 instance=ExtResource("3_mt4cf")]
+position = Vector2(788, -218)
+memory_id = "Carrinho"
+description = "Eu encontrei um amigo pra brincar de carrinho!!"
+active_night = 3
+memory_icon = ExtResource("7_uddy2")
+
+[node name="Collectable_D3B" parent="." unique_id=1542452772 instance=ExtResource("3_mt4cf")]
+position = Vector2(1642, 561)
+memory_id = "Escorregador"
+description = "Eu brinquei de escorregador com meu irmão..."
 active_night = 3
 memory_icon = ExtResource("11_hd16n")
 
-[node name="Collectable10" parent="." unique_id=491931421 instance=ExtResource("3_mt4cf")]
-position = Vector2(-288, 551)
-memory_id = "MemoriaB"
-description = "Eles desmontaram meu cubo..."
+[node name="Collectable_D3C" parent="." unique_id=491931421 instance=ExtResource("3_mt4cf")]
+position = Vector2(-9, 334)
+memory_id = "Cubo"
+description = "Eu aprendi a montar um cubo mágico!!"
 active_night = 3
 memory_icon = ExtResource("12_u3fgl")
 
-[node name="Enemies_Phantom" type="Node" parent="." unique_id=259408661]
+[node name="Enemies_3" type="Node" parent="." unique_id=259408661]
 
-[node name="Phantom" parent="Enemies_Phantom" unique_id=300325181 instance=ExtResource("5_jro1w")]
-position = Vector2(-429, 198)
+[node name="Jumper" parent="Enemies_3" unique_id=300325181 instance=ExtResource("5_b68cj")]
+position = Vector2(1572, 747)
 active_day = 3
 
-[node name="Phantom3" parent="Enemies_Phantom" unique_id=404663 instance=ExtResource("5_jro1w")]
-position = Vector2(-429, 198)
+[node name="Mouth" parent="Enemies_3" unique_id=1516715712 instance=ExtResource("7_j1myf")]
+position = Vector2(-1127, 468)
 active_day = 3
 
-[node name="Phantom2" parent="Enemies_Phantom" unique_id=972603361 instance=ExtResource("5_jro1w")]
-position = Vector2(-429, 198)
+[node name="Phantom" parent="Enemies_3" unique_id=161132941 instance=ExtResource("5_jro1w")]
+position = Vector2(1124, 468)
+active_day = 3
 
-[node name="Enemies_Jumpers" type="Node" parent="." unique_id=79120197]
+[node name="Enemies_2" type="Node" parent="." unique_id=246176119]
 
-[node name="Jumper" parent="Enemies_Jumpers" unique_id=1992110024 instance=ExtResource("5_b68cj")]
-position = Vector2(716, 479)
-
-[node name="Jumper2" parent="Enemies_Jumpers" unique_id=279405626 instance=ExtResource("5_b68cj")]
-position = Vector2(712, 426)
+[node name="Mouth" parent="Enemies_2" unique_id=1638916233 instance=ExtResource("7_j1myf")]
+position = Vector2(1497, 323)
 active_day = 2
 
-[node name="Jumper3" parent="Enemies_Jumpers" unique_id=1647976534 instance=ExtResource("5_b68cj")]
-position = Vector2(746, 426)
+[node name="Mouth2" parent="Enemies_2" unique_id=86263976 instance=ExtResource("7_j1myf")]
+position = Vector2(-813, -91)
 active_day = 2
 
-[node name="Jumper4" parent="Enemies_Jumpers" unique_id=611561932 instance=ExtResource("5_b68cj")]
-position = Vector2(709, 383)
-active_day = 3
-
-[node name="Jumper5" parent="Enemies_Jumpers" unique_id=1151354085 instance=ExtResource("5_b68cj")]
-position = Vector2(749, 381)
-active_day = 3
-
-[node name="Jumper6" parent="Enemies_Jumpers" unique_id=135689945 instance=ExtResource("5_b68cj")]
-position = Vector2(801, 376)
-active_day = 3
-
-[node name="Enemies_Mouth" type="Node" parent="Enemies_Jumpers" unique_id=246176119]
-
-[node name="Mouth" parent="Enemies_Jumpers/Enemies_Mouth" unique_id=123984643 instance=ExtResource("7_j1myf")]
-position = Vector2(634, 446)
+[node name="Mouth3" parent="Enemies_2" unique_id=1945113731 instance=ExtResource("7_j1myf")]
+position = Vector2(-1441, 110)
 active_day = 2
+
+[node name="Enemies_1" type="Node" parent="." unique_id=79120197]
+
+[node name="Jumper2" parent="Enemies_1" unique_id=2122238909 instance=ExtResource("5_b68cj")]
+position = Vector2(-1416, -10)
+
+[node name="Jumper" parent="Enemies_1" unique_id=887553608 instance=ExtResource("5_b68cj")]
+position = Vector2(1109, -111)
+
+[node name="Jumper3" parent="Enemies_1" unique_id=1024203747 instance=ExtResource("5_b68cj")]
+position = Vector2(-744, -231)

@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://c21yncahwb33g" path="res://night/collectable.gd" id="1_a2why"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iwwuy"]
+size = Vector2(40, 40)
 
 [node name="Collectable" type="Area2D" unique_id=2102626345]
 collision_layer = 8

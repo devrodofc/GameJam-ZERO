@@ -6,6 +6,7 @@ enum Phase { DAY, NIGHT }
 # ─── Estado global ───────────────────────────────────────
 var current_phase: Phase = Phase.DAY
 var current_day: int = 1
+var fase_da_historia: int = 0
 
 # ─── Caminhos das cenas ──────────────────────────────────
 const BASE_SCENE_PATH: String = "res://scenes/"
@@ -23,6 +24,7 @@ signal day_changed(new_day: int)
 func start_game() -> void:
 	current_day = 1
 	current_phase = Phase.DAY
+	fase_da_historia = 0 
 	_load_current_phase_scene()
 
 # ─── Transição de Dia > Noite ────────────────────────────
