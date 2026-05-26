@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://c8ifa2tx1h53"]
 
-[ext_resource type="PackedScene" uid="uid://ktv6yt5eagcp" path="res://entities/enemies/MonsterAbstract/enemyDefault.tscn" id="1_1jnwq"]
+[ext_resource type="PackedScene" uid="uid://ktv6yt5eagcp" path="res://entities/enemies/MonsterAbstract/enemy_default.tscn" id="1_1jnwq"]
 [ext_resource type="Script" uid="uid://b6hcj6mbcmsv1" path="res://entities/enemies/Monster2/mouth.gd" id="2_ostq6"]
-[ext_resource type="PackedScene" uid="uid://cpy2uqnmfi8ix" path="res://entities/enemies/Projectile/Projectile_Enemy.tscn" id="3_e8gau"]
+[ext_resource type="PackedScene" uid="uid://cpy2uqnmfi8ix" path="res://entities/enemies/Projectile/projectile_pnemy.tscn" id="3_e8gau"]
 [ext_resource type="Texture2D" uid="uid://d1pavi0ackgil" path="res://assets/sprites/entities/monster2/Boca - Vilao - GameJam (1).png" id="4_y8xjc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y8xjc"]

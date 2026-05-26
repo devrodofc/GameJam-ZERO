@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dw3sln8aa6uj2"]
 
-[ext_resource type="PackedScene" uid="uid://ktv6yt5eagcp" path="res://entities/enemies/MonsterAbstract/enemyDefault.tscn" id="1_otkyv"]
+[ext_resource type="PackedScene" uid="uid://ktv6yt5eagcp" path="res://entities/enemies/MonsterAbstract/enemy_default.tscn" id="1_otkyv"]
 [ext_resource type="Script" uid="uid://cr5v3g0j8sfcw" path="res://entities/enemies/Monster3/phantom.gd" id="2_et0vf"]
 [ext_resource type="Texture2D" uid="uid://bvmgnphjkxd7v" path="res://assets/sprites/entities/monster 3/ansiedade - Game Jam - Fantasma.png" id="3_c7yi6"]
 

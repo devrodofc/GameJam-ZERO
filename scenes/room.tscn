@@ -1,12 +1,12 @@
 [gd_scene format=4 uid="uid://cdlkna730ogxl"]
 
 [ext_resource type="Script" uid="uid://d26u8w587kcdh" path="res://scenes/room.gd" id="1_7dqbv"]
-[ext_resource type="Texture2D" uid="uid://b3pqvcxs85e8r" path="res://assets/sprites/backgrounds/Terrain (32x32).png" id="1_qvc4m"]
+[ext_resource type="Texture2D" uid="uid://b3pqvcxs85e8r" path="res://assets/sprites/backgrounds/tilemap/Terrain (32x32).png" id="1_qvc4m"]
 [ext_resource type="PackedScene" uid="uid://bxhny66uudb6h" path="res://entities/JulioDay/player_day.tscn" id="2_jn645"]
-[ext_resource type="Texture2D" uid="uid://dtj623vex21xi" path="res://assets/sprites/backgrounds/House-interior-pixel-art-v1.2/House-interior-pixel-art/window-56x43.png" id="2_qvc4m"]
-[ext_resource type="PackedScene" uid="uid://yo7ghx1njekx" path="res://Test/platform.tscn" id="3_qvc4m"]
+[ext_resource type="Texture2D" uid="uid://dtj623vex21xi" path="res://assets/sprites/props/window-56x43.png" id="2_qvc4m"]
+[ext_resource type="PackedScene" uid="uid://yo7ghx1njekx" path="res://scenes/platform.tscn" id="3_qvc4m"]
 [ext_resource type="PackedScene" uid="uid://dmjgwmyekqrcx" path="res://day/Bed.tscn" id="5_ybpoa"]
-[ext_resource type="Texture2D" uid="uid://ctp4dlwcni83" path="res://assets/sprites/backgrounds/House-interior-pixel-art-v1.2/House-interior-pixel-art/Sprite-0007-108x24.png" id="7_qvc4m"]
+[ext_resource type="Texture2D" uid="uid://ctp4dlwcni83" path="res://assets/sprites/props/Sprite-0007-108x24.png" id="7_qvc4m"]
 [ext_resource type="PackedScene" uid="uid://dwi65wnx75rcj" path="res://ui/dialogue/dialogue.tscn" id="9_ybpoa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7dqbv"]
