@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dmjgwmyekqrcx"]
 
 [ext_resource type="Script" uid="uid://dr7438s2ai2rh" path="res://day/bed.gd" id="1_cg6ud"]
-[ext_resource type="Texture2D" uid="uid://28ac2adhfwmv" path="res://assets/sprites/backgrounds/cama-removebg-preview.png" id="2_3uake"]
+[ext_resource type="Texture2D" uid="uid://28ac2adhfwmv" path="res://assets/sprites/props/cama-removebg-preview.png" id="2_3uake"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3uake"]
 

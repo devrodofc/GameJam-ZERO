@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="GameJamZERO"
+config/name="Fragments"
 run/main_scene="uid://cokh5flxhd653"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"

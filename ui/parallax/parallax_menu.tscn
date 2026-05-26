@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://bu8ask4l5rp2y"]
 
-[ext_resource type="Texture2D" uid="uid://ue115ak5mgxf" path="res://assets/parallax/BackGround_UI/Clouds/Clouds 8/1.png" id="1_iyib4"]
-[ext_resource type="Texture2D" uid="uid://drjdgfp7u848t" path="res://assets/parallax/BackGround_UI/Clouds/Clouds 8/2.png" id="2_c0j7q"]
-[ext_resource type="Texture2D" uid="uid://b15chifyiyyd5" path="res://assets/parallax/BackGround_UI/Clouds/Clouds 8/3.png" id="3_wn85d"]
-[ext_resource type="Texture2D" uid="uid://bgto171if8kaw" path="res://assets/parallax/BackGround_UI/Clouds/Clouds 8/4.png" id="4_4gtcd"]
-[ext_resource type="Texture2D" uid="uid://b7jqs7q2o4rwp" path="res://assets/parallax/BackGround_UI/Clouds/Clouds 8/5.png" id="5_qjhxg"]
-[ext_resource type="Texture2D" uid="uid://ca2m52r1dby4w" path="res://assets/parallax/BackGround_UI/Clouds/Clouds 8/6.png" id="6_ha42a"]
+[ext_resource type="Texture2D" uid="uid://ue115ak5mgxf" path="res://assets/sprites/backgrounds/parallax/parallax_skays/Clouds/Clouds 8/1.png" id="1_iyib4"]
+[ext_resource type="Texture2D" uid="uid://drjdgfp7u848t" path="res://assets/sprites/backgrounds/parallax/parallax_skays/Clouds/Clouds 8/2.png" id="2_c0j7q"]
+[ext_resource type="Texture2D" uid="uid://b15chifyiyyd5" path="res://assets/sprites/backgrounds/parallax/parallax_skays/Clouds/Clouds 8/3.png" id="3_wn85d"]
+[ext_resource type="Texture2D" uid="uid://bgto171if8kaw" path="res://assets/sprites/backgrounds/parallax/parallax_skays/Clouds/Clouds 8/4.png" id="4_4gtcd"]
+[ext_resource type="Texture2D" uid="uid://b7jqs7q2o4rwp" path="res://assets/sprites/backgrounds/parallax/parallax_skays/Clouds/Clouds 8/5.png" id="5_qjhxg"]
+[ext_resource type="Texture2D" uid="uid://ca2m52r1dby4w" path="res://assets/sprites/backgrounds/parallax/parallax_skays/Clouds/Clouds 8/6.png" id="6_ha42a"]
 
 [node name="ParallaxMenu" type="Node2D" unique_id=20589860]
 position = Vector2(368, 241)

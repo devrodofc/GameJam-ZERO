@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://7dpsd6xffu7f"]
 
-[ext_resource type="PackedScene" uid="uid://ktv6yt5eagcp" path="res://entities/enemies/MonsterAbstract/enemyDefault.tscn" id="1_fkl42"]
+[ext_resource type="PackedScene" uid="uid://ktv6yt5eagcp" path="res://entities/enemies/MonsterAbstract/enemy_default.tscn" id="1_fkl42"]
 [ext_resource type="Script" uid="uid://bnbf2k67imoev" path="res://entities/enemies/Monster1/jumper.gd" id="2_yu73a"]
 [ext_resource type="Texture2D" uid="uid://c5fcy8ewj7tk3" path="res://assets/sprites/entities/monster1/jumper_jump.png" id="3_1dqw6"]
 [ext_resource type="Texture2D" uid="uid://ckbc464gpwghq" path="res://assets/sprites/entities/monster1/jumper_walk_right.png" id="4_p1eq7"]

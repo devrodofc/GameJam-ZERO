@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bmsk4v54fhuwx"]
 
-[ext_resource type="FontFile" uid="uid://dwq6aefcd3y06" path="res://ui/menu/pazerat/Pazerat.otf" id="1_lm0yj"]
+[ext_resource type="FontFile" uid="uid://dwq6aefcd3y06" path="res://assets/resources/pazerat/Pazerat.otf" id="1_lm0yj"]
 
 [node name="Credits" type="Control" unique_id=1384430137]
 layout_mode = 3

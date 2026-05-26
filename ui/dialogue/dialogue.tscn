@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dwi65wnx75rcj"]
 
 [ext_resource type="Script" uid="uid://cg3q54ua168h6" path="res://ui/dialogue/dialogue.gd" id="1_nnq6v"]
-[ext_resource type="Texture2D" uid="uid://b3fdvh810tmyw" path="res://ui/menu/Prinbles_Asset_Robin (v 1.1) (9_5_2023)/Prinbles_Asset_Robin (v 1.1) (9_5_2023)/png/Button/Rect/Fill/Default.png" id="2_h4lfh"]
-[ext_resource type="FontFile" uid="uid://dwq6aefcd3y06" path="res://ui/menu/pazerat/Pazerat.otf" id="3_m4qfh"]
+[ext_resource type="Texture2D" uid="uid://b3fdvh810tmyw" path="res://ui/menu/ui_sprites/png/Button/Rect/Fill/Default.png" id="2_h4lfh"]
+[ext_resource type="FontFile" uid="uid://dwq6aefcd3y06" path="res://assets/resources/pazerat/Pazerat.otf" id="3_m4qfh"]
 
 [node name="Dialogue" type="CanvasLayer" unique_id=493380152]
 process_mode = 3
